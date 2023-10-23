@@ -91,6 +91,8 @@
                     </p>
                 </div>
 
+                <h2 class="tldr">TL;DR:  We propose a novel framework that simultaneously recovers high-fidelity object shapes and textures from single-view images.</h2>
+
                 <!-- add teaser -->
                 <div>
                     <span class="center"><img src="assets/teaser.png" style="width:1050px;"></span>
@@ -172,9 +174,10 @@
     <div class="white_section_nerf">
         <div class="w-container">
             <h2 class="grey-heading_nerf">Method</h2>
-            <!-- <p class="paragraph-3 nerf_text nerf_results_text">
-                We learn a view-conditioned diffusion model that can subsequently control the viewpoint of an image containing a novel object (left). Such diffusion model can also be used to train a NeRF for 3D reconstruction (right). Please refer to our paper for more details or checkout our code for implementation.
-            </p> -->
+            <p class="paragraph-3 nerf_text nerf_results_text">
+                Our approach utilizes neural implicit shape and radiance field representations, leveraging explicit 3D shape supervision and volume rendering of color, depth, and surface normal images. To overcome shape-appearance ambiguity under partial observations, we introduce a two-stage learning curriculum that incorporates both 3D and 2D supervisions. 
+                Please refer to our paper for more details or checkout our code for implementation.
+            </p>
             <div>
                 <span class="center"><img src="assets/method.png" style="width:1050px;"></span>
             </div>
@@ -187,9 +190,11 @@
     <div class="white_section_nerf">
         <div class="w-container">
         <h2 class="grey-heading_nerf">3D Object Reconstruction</h2>
-        <!-- <p class="paragraph-3 nerf_text nerf_results_text">
-            Here are results of applying Zero-1-to-3 to obtain a full 3D reconstruction from the input image shown on the left. We compare our reconstruction with state-of-the-art models in single-view 3D reconstruction.
-        </p> -->
+        <p class="paragraph-3 nerf_text nerf_results_text">
+            Here are results of applying our model (or <b>SSR(?)</b>) to obtain a 3D object reconstruction from the input image shown on the left. 
+            We compare our reconstruction with state-of-the-art models in single-view 3D reconstruction.
+            Our model produces textured 3D objects with smoother surfaces and finer details compared to previous methods.
+        </p>
 
         <!-- the first row -->
         <div style="height: 150px;">
@@ -474,9 +479,10 @@
 
 
         <h2 class="grey-heading_nerf">Comparison with Prior-guided Models</h2>
-        <!-- <p class="paragraph-3 nerf_text nerf_results_text">
-            Here are results of applying Zero-1-to-3 to obtain a full 3D reconstruction from the input image shown on the left. We compare our reconstruction with state-of-the-art models in single-view 3D reconstruction.
-        </p> -->
+        <p class="paragraph-3 nerf_text nerf_results_text">
+            Here are results we compare our model with generative models that demonstrate potential zero-shot generalizability by leveraging 2D or 3D geometric priors learned from large-scale datasets. 
+            Please refer to our paper for a more in-depth discussion.
+        </p>
         <!-- the first row -->
         <div style="height: 150px;">
             <div class="row" style="height: 150px;">
@@ -539,9 +545,11 @@
         <br><br>
 
         <h2 class="grey-heading_nerf">Scene Reconstruction on SUN RGB-D</h2>
-        <!-- <p class="paragraph-3 nerf_text nerf_results_text">
-            Here are results of applying Zero-1-to-3 to obtain a full 3D reconstruction from the input image shown on the left. We compare our reconstruction with state-of-the-art models in single-view 3D reconstruction.
-        </p> -->
+        <p class="paragraph-3 nerf_text nerf_results_text">
+            Here are results of applying our model to obtain a full scene reconstruction from the input image shown on the left. 
+            We compare our reconstruction with state-of-the-art models in single-view 3D reconstruction. <br>
+            Please note that our model is only trained on FRONT3D and not on SUN RGB-D. The results demonstrate that our method can reconstruct detailed object shapes and intricate textures in real images with cross-domain generalization ability.
+        </p>
         <!-- the first row -->
         <div style="height: 150px;">
             <div class="row" style="height: 150px;">
@@ -638,9 +646,9 @@
         <br>
 
         <h2 class="grey-heading_nerf">Novel-view Synthesis with Volume Rendering</h2>
-        <!-- <p class="paragraph-3 nerf_text nerf_results_text">
-            Here are results of applying Zero-1-to-3 to obtain a full 3D reconstruction from the input image shown on the left. We compare our reconstruction with state-of-the-art models in single-view 3D reconstruction.
-        </p> -->
+        <p class="paragraph-3 nerf_text nerf_results_text">
+            Here are results we show our model's rendering capabilities, to render the color, depth, and normal images through volume rendering from the single-view input image, even when the viewing angles change significantly.
+        </p>
 
         <!-- the first row -->
         <div style="height: 150px;">
@@ -726,9 +734,9 @@
         <br>
 
         <h2 class="grey-heading_nerf">3D Scene Editing</h2>
-        <!-- <p class="paragraph-3 nerf_text nerf_results_text">
-            Here are results of applying Zero-1-to-3 to obtain a full 3D reconstruction from the input image shown on the left. We compare our reconstruction with state-of-the-art models in single-view 3D reconstruction.
-        </p> -->
+        <p class="paragraph-3 nerf_text nerf_results_text">
+            Here are results we demonstrate our model's potential in representing scenes and enabling 3D scene editing applications.
+        </p>
 
         <h2 class="grey-heading_nerf_v3">Object Translation and Rotation</h2>
 
