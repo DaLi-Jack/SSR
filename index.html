@@ -191,7 +191,7 @@
         <div class="w-container">
         <h2 class="grey-heading_nerf">3D Object Reconstruction</h2>
         <p class="paragraph-3 nerf_text nerf_results_text">
-            Here are results of applying our model (or <b>SSR(?)</b>) to obtain a 3D object reconstruction from the input image shown on the left. 
+            Here are results of applying our model to obtain a 3D object reconstruction from the input image shown on the left. 
             We compare our reconstruction with state-of-the-art models in single-view 3D reconstruction.
             Our model produces textured 3D objects with smoother surfaces and finer details compared to previous methods.
         </p>
@@ -364,45 +364,6 @@
         <div style="height: 150px;">
             <div class="row" style="height: 150px;">
               <div class="col" style="height: 150px; padding-top: 20px;">
-                  <img src="./assets/object-recon/table1/bbox_img.png">
-              </div>
-              <div class="col" style="height: 150px;">
-                  <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="0.5" camera-orbit="0deg 45deg"
-                      src="./assets/object-recon/table1/total3d.glb">
-                  </model-viewer>
-              </div>
-              <div class="col" style="height: 150px;">
-                  <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="0.5" camera-orbit="0deg 45deg"
-                      src="./assets/object-recon/table1/im3d.glb">
-                  </model-viewer>
-              </div>
-              <div class="col" style="height: 150px;">
-                  <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="0.5" camera-orbit="0deg 45deg"
-                      src="./assets/object-recon/table1/instpifu.glb">
-                  </model-viewer>
-              </div>
-              <div class="col" style="height: 150px;">
-                  <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="0.5" camera-orbit="0deg 45deg"
-                      src="./assets/object-recon/table1/front3d_nonecolormesh.glb">
-                  </model-viewer>
-              </div>
-              <div class="col" style="height: 150px;">
-                <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="0.5" camera-orbit="0deg 45deg"
-                    src="./assets/object-recon/table1/front3d_colormesh.glb">
-                </model-viewer>
-              </div>
-              <div class="col" style="height: 150px;">
-                <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="0.5" camera-orbit="0deg 45deg"
-                    src="./assets/object-recon/table1/watertight.glb">
-                </model-viewer>
-              </div>
-            </div>  
-        </div>
-
-        <!-- the sixth row -->
-        <div style="height: 150px;">
-            <div class="row" style="height: 150px;">
-              <div class="col" style="height: 150px; padding-top: 20px;">
                   <img src="./assets/object-recon/table2/bbox_img.png">
               </div>
               <div class="col" style="height: 150px;">
@@ -438,49 +399,10 @@
             </div>  
         </div>
 
-        <!-- the seventh row -->
-        <div style="height: 150px;">
-            <div class="row" style="height: 150px;">
-              <div class="col" style="height: 150px; padding-top: 20px;">
-                  <img src="./assets/object-recon/chair2/bbox_img.png">
-              </div>
-              <div class="col" style="height: 150px;">
-                  <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="0.5" camera-orbit="0deg 45deg"
-                      src="./assets/object-recon/chair2/total3d.glb">
-                  </model-viewer>
-              </div>
-              <div class="col" style="height: 150px;">
-                  <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="0.5" camera-orbit="0deg 45deg"
-                      src="./assets/object-recon/chair2/im3d.glb">
-                  </model-viewer>
-              </div>
-              <div class="col" style="height: 150px;">
-                  <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="0.5" camera-orbit="0deg 45deg"
-                      src="./assets/object-recon/chair2/instpifu.glb">
-                  </model-viewer>
-              </div>
-              <div class="col" style="height: 150px;">
-                  <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="0.5" camera-orbit="0deg 45deg"
-                      src="./assets/object-recon/chair2/front3d_nonecolormesh.glb">
-                  </model-viewer>
-              </div>
-              <div class="col" style="height: 150px;">
-                <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="0.5" camera-orbit="0deg 45deg"
-                    src="./assets/object-recon/chair2/front3d_colormesh.glb">
-                </model-viewer>
-              </div>
-              <div class="col" style="height: 150px;">
-                <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="0.5" camera-orbit="0deg 45deg"
-                    src="./assets/object-recon/chair2/watertight.glb">
-                </model-viewer>
-              </div>
-            </div>  
-        </div>
-
 
         <h2 class="grey-heading_nerf">Comparison with Prior-guided Models</h2>
         <p class="paragraph-3 nerf_text nerf_results_text">
-            Here are results we compare our model with generative models that demonstrate potential zero-shot generalizability by leveraging 2D or 3D geometric priors learned from large-scale datasets. 
+            We compare our model with generative models that demonstrate potential zero-shot generalizability by leveraging 2D or 3D geometric priors learned from large-scale datasets. 
             Please refer to our paper for a more in-depth discussion.
         </p>
         <!-- the first row -->
@@ -546,8 +468,7 @@
 
         <h2 class="grey-heading_nerf">Scene Reconstruction on SUN RGB-D</h2>
         <p class="paragraph-3 nerf_text nerf_results_text">
-            Here are results of applying our model to obtain a full scene reconstruction from the input image shown on the left. 
-            We compare our reconstruction with state-of-the-art models in single-view 3D reconstruction. <br>
+            We compare our scene reconstruction results with state-of-the-art models in single-view 3D reconstruction. <br>
             Please note that our model is only trained on FRONT3D and not on SUN RGB-D. The results demonstrate that our method can reconstruct detailed object shapes and intricate textures in real images with cross-domain generalization ability.
         </p>
         <!-- the first row -->
@@ -647,7 +568,7 @@
 
         <h2 class="grey-heading_nerf">Novel-view Synthesis with Volume Rendering</h2>
         <p class="paragraph-3 nerf_text nerf_results_text">
-            Here are results we show our model's rendering capabilities, to render the color, depth, and normal images through volume rendering from the single-view input image, even when the viewing angles change significantly.
+            Here we show our model's rendering capabilities, to render the color, depth, and normal images through volume rendering from the single-view input image, even when the viewing angles change significantly.
         </p>
 
         <!-- the first row -->
@@ -735,7 +656,7 @@
 
         <h2 class="grey-heading_nerf">3D Scene Editing</h2>
         <p class="paragraph-3 nerf_text nerf_results_text">
-            Here are results we demonstrate our model's potential in representing scenes and enabling 3D scene editing applications.
+            We demonstrate our model's potential in representing scenes and enabling 3D scene editing applications.
         </p>
 
         <h2 class="grey-heading_nerf_v3">Object Translation and Rotation</h2>
