@@ -148,22 +148,13 @@
         <div class="grey_container w-container">
             <h2 class="grey-heading_nerf">Abstract</h2>
             <p class="paragraph-3 nerf_text nerf_results_text">
-                Reconstructing detailed 3D scenes from single-view images remains a challenging task due to limitations in
-                existing approaches, which primarily focus on geometric shape recovery, overlooking object appearances and
-                fine shape details. To address these challenges, we propose a novel framework for simultaneous high-fidelity
-                recovery of object shapes and textures from single-view images. Our approach utilizes neural implicit shape
-                and radiance field representations, leveraging explicit 3D shape supervision and volume rendering of color,
-                depth, and surface normal images. To overcome shape-appearance ambiguity under partial observations, we
-                introduce a two-stage learning curriculum that incorporates both 3D and 2D supervisions.
-                A distinctive feature of our framework is its ability to generate fine-grained textured meshes while
-                seamlessly integrating rendering capabilities into the single-view 3D reconstruction model. This integration
-                enables not only improved textured 3D object reconstruction by 27.7% and 11.6% on the
-                3D-FRONT and Pix3D datasets, respectively, but also supports the rendering of
-                images from novel viewpoints.
-                Beyond individual objects, our approach facilitates composing object-level representations into flexible
-                scene representations, thereby enabling applications such as holistic scene understanding and 3D scene
-                editing. We conduct extensive experiments to demonstrate the effectiveness of our method and will make both
-                the code and model publicly available.
+                Reconstructing detailed 3D scenes from single-view images remains a challenging task due to limitations in existing approaches, which primarily focus on geometric shape recovery, overlooking object appearances and fine shape details. 
+                To address these challenges, we propose a novel framework for simultaneous high-fidelity recovery of object shapes and textures from single-view images. 
+                Our approach utilizes SSR, Single-view neural implicit Shape and Radiance field representations, leveraging explicit 3D shape supervision and volume rendering of color, depth, and surface normal images. 
+                To overcome shape-appearance ambiguity under partial observations, we introduce a two-stage learning curriculum that incorporates both 3D and 2D supervisions. 
+                A distinctive feature of our framework is its ability to generate fine-grained textured meshes while seamlessly integrating rendering capabilities into the single-view 3D reconstruction model. 
+                This integration enables not only improved textured 3D object reconstruction by 27.7% and 11.6% on the 3D-FRONT and Pix3D datasets, respectively, but also supports the rendering of images from novel viewpoints.
+                Beyond individual objects, our approach facilitates composing object-level representations into flexible scene representations, thereby enabling applications such as holistic scene understanding and 3D scene editing.
             </p>
         </div>
     </div>
@@ -189,9 +180,8 @@
     <!-- add mesh -->
     <div class="white_section_nerf">
         <div class="w-container">
-        <h2 class="grey-heading_nerf">3D Object Reconstruction</h2>
+        <h2 class="grey-heading_nerf">Single-view Object Reconstruction</h2>
         <p class="paragraph-3 nerf_text nerf_results_text">
-            Here are results of applying our model to obtain a 3D object reconstruction from the input image shown on the left. 
             We compare our reconstruction with state-of-the-art models in single-view 3D reconstruction.
             Our model produces textured 3D objects with smoother surfaces and finer details compared to previous methods.
         </p>
@@ -466,10 +456,10 @@
 
         <br><br>
 
-        <h2 class="grey-heading_nerf">Scene Reconstruction on SUN RGB-D</h2>
+        <h2 class="grey-heading_nerf">Generalizable Scene Reconstruction</h2>
         <p class="paragraph-3 nerf_text nerf_results_text">
-            We compare our scene reconstruction results with state-of-the-art models in single-view 3D reconstruction. <br>
-            Please note that our model is only trained on FRONT3D and not on SUN RGB-D. The results demonstrate that our method can reconstruct detailed object shapes and intricate textures in real images with cross-domain generalization ability.
+            We show our scene reconstruction results on SUN RGB-D. <br>
+            Please note that our model is only trained on FRONT3D and <b> not on SUN RGB-D </b>. The results demonstrate that our method can reconstruct detailed object shapes and intricate textures in real images with cross-domain generalization ability.
         </p>
         <!-- the first row -->
         <div style="height: 150px;">
@@ -566,7 +556,7 @@
         <br>
         <br>
 
-        <h2 class="grey-heading_nerf">Novel-view Synthesis with Volume Rendering</h2>
+        <h2 class="grey-heading_nerf">Novel-view Synthesis from Single Image</h2>
         <p class="paragraph-3 nerf_text nerf_results_text">
             Here we show our model's rendering capabilities, to render the color, depth, and normal images through volume rendering from the single-view input image, even when the viewing angles change significantly.
         </p>
@@ -654,7 +644,7 @@
         <br>
         <br>
 
-        <h2 class="grey-heading_nerf">3D Scene Editing</h2>
+        <h2 class="grey-heading_nerf">Scene Editing</h2>
         <p class="paragraph-3 nerf_text nerf_results_text">
             We demonstrate our model's potential in representing scenes and enabling 3D scene editing applications.
         </p>
@@ -751,17 +741,15 @@
         <h2 class="grey-heading_nerf">Related Work</h2>
           <div class="grey_container w-container">
             <p class="paragraph-3 nerf_text nerf_results_text">
-              <a href="https://pals.ttic.edu/p/score-jacobian-chaining">Score Jacobian Chaining: Lifting Pretrained 2D Diffusion Models for 3D Generation</a>
+              <a href="https://arxiv.org/abs/2002.12212">Total3DUnderstanding: Joint Layout, Object Pose and Mesh Reconstruction for Indoor Scenes from a Single Image</a>
               <br>
-              <a href="https://dreamfusion3d.github.io/">DreamFusion: Text-to-3D using 2D Diffusion</a>
+              <a href="https://arxiv.org/abs/2103.06422">Holistic 3D Scene Understanding from a Single Image with Implicit Representation</a>
               <br>
-              <a href="https://sparsefusion.github.io/">SparseFusion: Distilling View-conditioned Diffusion for 3D Reconstruction</a>
+              <a href="https://arxiv.org/abs/2207.08656">Towards High-Fidelity Single-view Holistic Reconstruction of Indoor Scenes</a>
               <br>
-              <a href="https://vita-group.github.io/NeuralLift-360/">NeuralLift-360: Lifting An In-the-wild 2D Photo to A 3D Object with 360° Views</a>
+              <a href="https://arxiv.org/abs/2305.02463">Shap-E: Generating Conditional 3D Implicit Functions</a>
               <br>
-              <a href="https://arxiv.org/abs/2212.03267">NeRDi: Single-View NeRF Synthesis with Language-Guided Diffusion as General Image Priors</a>
-              <br>
-              <a href="https://arxiv.org/abs/2302.10663">RealFusion: 360° Reconstruction of Any Object from a Single Image</a>
+              <a href="https://zero123.cs.columbia.edu/">Zero-1-to-3: Zero-shot One Image to 3D Object</a>
             <p>
           </div>
         </div>
@@ -772,13 +760,8 @@
         <h2 class="grey-heading_nerf">BibTeX</h2>
         <div class="grey_container w-container">
           <div class="bibtex">
-           <pre><code>@misc{liu2023zero1to3,
-            title={Zero-1-to-3: Zero-shot One Image to 3D Object}, 
-            author={Ruoshi Liu and Rundi Wu and Basile Van Hoorick and Pavel Tokmakov and Sergey Zakharov and Carl Vondrick},
-            year={2023},
-            eprint={2303.11328},
-            archivePrefix={arXiv},
-            primaryClass={cs.CV}
+           <pre><code>@misc{
+
 }</code></pre></div>
         </div>
     </div>
@@ -788,12 +771,27 @@
         <h2 class="grey-heading_nerf">Acknowledgements</h2>
         <div class="grey_container w-container">
             <p class="paragraph-3 nerf_text nerf_results_text">
-                We demonstrate our model's potential in representing scenes and enabling 3D scene editing applications.
+                The authors thank colleagues from BIGAI for fruitful discussions and anonymous reviewers for constructive feedback. <br>
             </p>
         </div>
     </div>
 
-  
+    <br>
+
+    <footer class="card-footer">
+        <div class="container">
+            <div class="text-center">
+            <p>
+                This website is inspired by the template of <a href="https://zero123.cs.columbia.edu/">Zero-1-to-3: Zero-shot One Image to 3D Object</a>.
+            </p>
+            </div>
+        </div>
+
+        <br>
+
+    </footer>
+
+
 </body>
   
 </html>
