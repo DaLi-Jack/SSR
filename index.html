@@ -21,7 +21,7 @@
     </script>
   
     <meta charset="utf-8"/>
-    <title>PAIF</title>
+    <title>SSR</title>
     <meta content="Single-view 3D Scene Reconstruction with High-fidelity Shape and Texture" name="description"/>
     <meta content="summary" name="twitter:card"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
     <link href="style/template.css" rel="stylesheet" type="text/css"/>
@@ -80,14 +80,31 @@
                     <div class="w-col-2 w-col w-col-small-4 w-col-tiny-4">
                         <a href="https://yixchen.github.io/" target="_blank" class="nerf_authors_v2">Yixin Chen*<sup>1</sup></a>
                     </div>
+                    <div class="w-col-2 w-col w-col-small-4 w-col-tiny-4">
+                        <a href="https://dali-jack.github.io/Junfeng-Ni/" target="_blank" class="nerf_authors_v2">Junfeng Ni*<sup>2+</sup></a>
+                    </div>
+                    <div class="w-col-2 w-col w-col-small-4 w-col-tiny-4">
+                        <a href="https://pku.ai/author/nan-jiang/" target="_blank" class="nerf_authors_v2">Nan Jiang<sup>3+</sup></a>
+                    </div>
+                    <div class="w-col-2 w-col w-col-small-4 w-col-tiny-4">
+                        <a href="" target="_blank" class="nerf_authors_v2">Yaowei Zhang<sup>1</sup></a>
+                    </div>
+                    <div class="w-col-2 w-col w-col-small-4 w-col-tiny-4">
+                        <a href="https://yzhu.io/" target="_blank" class="nerf_authors_v2">Yixin Zhu<sup>3</sup></a>
+                    </div>
+                    <div class="w-col-2 w-col w-col-small-4 w-col-tiny-4">
+                        <a href="https://siyuanhuang.com/" target="_blank" class="nerf_authors_v2">Siyuan Huang<sup>1</sup></a>
+                    </div>
 
                 </div>
 
                 <div>
                     <p style="color: black; font-size: 1em;">
                         * indicates equal contribution<br>
-                        <sup>1</sup>Beijing Institute for General Artificial Intelligence (BIGAI)<br>
+                        <sup>+</sup> Work done during an internship at BIGAI<br>
+                        <sup>1</sup>National Key Laboratory of General Artificial Intelligence, BIGAI<br>
                         <sup>2</sup>Tsinghua University<br>
+                        <sup>3</sup>Peking University<br>
                     </p>
                 </div>
 
@@ -98,45 +115,36 @@
                     <span class="center"><img src="assets/teaser.png" style="width:1050px;"></span>
                 </div>
 
+
                 <!-- add paper,code link -->
-                <!-- <div class="w-row">
-                    <div class="w-col w-col-3 w-col-small-4 w-col-tiny-4">
-                      <a href="https://arxiv.org/abs/2303.11328" target="_blank" class="link-block w-inline-block">
+                <div class="w-row">
+                    <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+                      <a href="" target="_blank" class="link-block w-inline-block">
                         <img src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5cab99df4998decfbf9e218e_paper-01.png" alt="paper" class="paper_img image-8 github_icon_nerf_v2"/></a>
                     </div>
-                    <div class="w-col w-col-3 w-col-small-4 w-col-tiny-4">
-                      <a href="https://github.com/cvlab-columbia/zero123" target="_blank" class="link-block w-inline-block">
+                    <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+                      <a href="" target="_blank" class="link-block w-inline-block">
                       <img src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5cae3b53b42ebb3dd4175a82_68747470733a2f2f7777772e69636f6e66696e6465722e636f6d2f646174612f69636f6e732f6f637469636f6e732f313032342f6d61726b2d6769746875622d3235362e706e67.png" alt="github" class="paper_img image-8 github_icon_nerf_v2"/></a>
                     </div>
-                    <div class="w-col w-col-3 w-col-small-4 w-col-tiny-4">
-                      <a href="https://huggingface.co/spaces/cvlab/zero123-live" target="_blank" class="link-block w-inline-block">
-                      <img src="assets/hf.jpg"  alt="demo" class="paper_img image-8_nerf nerf_db_icon"/></a>
-                    </div>
-                    <div class="w-col w-col-3 w-col-small-4 w-col-tiny-4">
-                      <a href="https://huggingface.co/cvlab/zero123-weights/tree/main" target="_blank" class="link-block w-inline-block">
-                      <img src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5e7136849ee3b0a0c6a95151_database.svg" alt="model" class="paper_img image-8_nerf nerf_db_icon"/></a>
+                    <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+                        <a href="" target="_blank" class="link-block w-inline-block">
+                        <img src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5e7136849ee3b0a0c6a95151_database.svg" alt="model" class="paper_img image-8_nerf nerf_db_icon"/></a>
                     </div>
                   </div>
                   <div class="w-row">
-                    <div class="w-col w-col-3 w-col-small-4 w-col-tiny-4">
+                    <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
                       <div class="text-block-2"><strong class="bold-text-nerf_v2">Arxiv</strong></div>
                     </div>
-                    <div class="w-col w-col-3 w-col-small-4 w-col-tiny-4">
+                    <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
                       <div class="text-block-2"><strong class="bold-text-nerf_v2">Code</strong></div>
                     </div>
-                    <div class="w-col w-col-3 w-col-small-4 w-col-tiny-4">
-                      <div class="text-block-2"><strong class="bold-text-nerf_v2">Live Demo</strong></div>
+                    <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+                        <div class="text-block-2"><strong class="bold-text-nerf_v2">Data</strong></div>
                     </div>
-                    <div class="w-col w-col-3 w-col-small-4 w-col-tiny-4">
-                      <div class="text-block-2"><strong class="bold-text-nerf_v2">Pretrained models</strong></div>
-                    </div>
-                  </div> -->
+                  </div>
                 
                 <div class="w-row">
-                    
-                        
                 </div>
-                
 
             </div>
 
