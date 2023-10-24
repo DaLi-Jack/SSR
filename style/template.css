@@ -741,9 +741,24 @@ fieldset[disabled] .w-select {
     max-width: 1000px;
 }
 
+.w-top{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: -60px;
+    max-width: 1000px;
+}
+
 .w-container .w-row {
     margin-left: -10px;
     margin-right: -10px;
+    margin-top: 2px;
+    margin-bottom: 4px
+}
+
+.w-container .w-author {
+    margin-left: 35px;
+    margin-right: 35px;
     margin-top: 2px;
     margin-bottom: 4px
 }
@@ -2276,8 +2291,8 @@ p {
 
 img {
     height: auto;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     vertical-align: middle
 }
 
@@ -3226,12 +3241,12 @@ img {
 
 .section {
     padding-top: 81px;
-    padding-bottom: 81px
+    padding-bottom: 0px
 }
 
 .section.hero {
     padding-top: 92px;
-    padding-bottom: 11px;
+    padding-bottom: 0px;
     background-color: #e4fa97
 }
 
@@ -3774,7 +3789,7 @@ img {
 .bold-text-nerf_v2,
 .nerf_authors_v2 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     color: #333
 }
 
@@ -3800,7 +3815,7 @@ img {
 
 .nerf_authors_v2 {
     font-weight: 400;
-    text-decoration: underline
+    text-decoration: none
 }
 
 .examples_header {
@@ -3848,8 +3863,8 @@ img {
 }
 
 .grey-heading_nerf {
-    margin-top: 40px;
-    margin-bottom: 23px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     margin-left: 25px;
     font-family: Ubuntu, Helvetica, sans-serif;
     color: rgba(0, 0, 0, .56);
