@@ -3862,6 +3862,17 @@ img {
     letter-spacing: -1px
 }
 
+.nerf_smalltitle_v2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Varela Round', sans-serif;
+    color: #4d4d4d;
+    font-size: 25px;
+    line-height: 45px;
+    font-weight: 700;
+    letter-spacing: -1px
+}
+
 .grey-heading_nerf {
     margin-top: 0px;
     margin-bottom: 0px;
