@@ -3863,8 +3863,8 @@ img {
 }
 
 .nerf_smalltitle_v2 {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 10px;
+    margin-bottom: -30px;
     font-family: 'Varela Round', sans-serif;
     color: #4d4d4d;
     font-size: 25px;
